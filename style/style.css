@@ -1,0 +1,107 @@
+/* Reset básico e estilos globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+header img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: calc(50% - 5px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#p {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#p2 {
+  font-style: italic;
+  color: #666;
+}
+
+/* Estilos responsivos */
+@media (max-width: 500px) {
+  header p {
+    font-size: 6vw;
+  }
+  
+  main {
+      padding: 10px;
+  }
+  
+  h1 {
+    font-size: 10vw;
+  }
+
+  input[type="text"] {
+      width: 100%;
+  }
+}
